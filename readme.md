@@ -1,24 +1,30 @@
-<h2>README - Portfólio Pessoal</h2>
-<h1>Visão Geral</h1>
-<p>Bem-vindo ao meu portfólio pessoal! Este projeto foi desenvolvido para contar para vocês quem é o Felipe, contando um pouco sobre mim, minhas formações e mostrando algumas fotos de momentos importantes.</p>
-</br>
-<h1>Tecnologias Utilizadas</h1>
-<ul>
-    <li>HTML: Estruturação do conteúdo e elementos do site</li>
-    <li>CSS: Estilização e layout do site, incluindo design responsivo.</li>
-    <li>JavaScript: Implementação de funcionalidades dinâmicas e interativas.</li>
-    <li>jQuery: Simplificação da manipulação do DOM e adição de efeitos visuais.</li>
-</ul>
-</br>
-<h1>Funcionalidades</h1>
-<ul>
-    <li>Home - Apresenta uma breve introdução e links para minhas redes sociais (experimente clicar no gatinho😉).</li>
-    <li>Sobre Mim - Falo mais sobre meus passatempos e hobbies.</li>
-    <li>Formações - Apresento minha formação (em andamento), e alguns cursos complementares.</li>
-    <li>Fotos - Mostro algumas fotos de momentos importantes.</li>
-</ul>
-</br>
-<h1>Contribuições</h1>
-<p>Contribuições são bem-vindas! Se você tiver sugestões ou encontrar algum problema, sinta-se à vontade para abrir uma issue ou enviar um pull request.</p>
-<h2>Licença</h2>
-<p>Este projeto está licenciado sob a Licença MIT.<p>
+# Meu Portfólio
+
+Este repositório contém o código-fonte do meu portfólio pessoal, onde apresento alguns dos meus projetos e informações sobre minha experiência.
+
+## Objetivo
+
+O objetivo deste portfólio é apresentar meus projetos e habilidades de maneira clara e acessível, funcionando como um espaço centralizado para possíveis empregadores e colaboradores conhecerem meu trabalho.
+
+## Estrutura da Página
+
+A página principal (`index.html`) está organizada em três seções:
+
+- **Início**: Uma breve descrição sobre quem sou e o que faço.
+- **Projetos**: Exibe uma seleção dos meus principais projetos.
+- **Sobre Mim**: Inclui um link para uma página dedicada com mais detalhes sobre minha trajetória e um link para meu WhatsApp para contato direto.
+
+## Tecnologias Utilizadas
+
+- **HTML**
+- **CSS**
+- **JavaScript**
+- **jQuery**
+
+## Visualização
+
+O portfólio está disponível neste [link](https://felipe-cesar-rodrigues.com.br/). Acesse para ver meus projetos e saber mais sobre mim.
+
+---
+
+**Obrigado por visitar meu portfólio!**

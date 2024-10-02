@@ -36,4 +36,12 @@ $(document).ready(function(){
     })
 
     
+    // alert
+    $('.blocked').click(()=>{
+        $('#customAlert').css('display', 'flex')
+    })
+
+    $('#closeAlert').click(()=>{
+        $('#customAlert').css('display', 'none')
+    })
 })   
