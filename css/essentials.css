@@ -17,6 +17,10 @@ h1{
     font-size: 3rem;
 }
 
+h2{
+    font-size: 2.5rem;
+}
+
 p{
     font-size: 1.1rem;
     font-weight: 500;
@@ -192,5 +196,15 @@ footer .social img:hover{
 @media (max-width: 800px){
     .social{
         justify-content: center;
+    }
+}
+
+@media (max-width: 500px){
+    h1{
+        font-size: 2rem;
+    }
+
+    h2{
+        font-size: 1.7rem;
     }
 }
