@@ -37,6 +37,7 @@ h2{
 }
 
 .card{
+    width: 350px;
     margin: 10px auto;
     padding: 15px;
 
@@ -88,12 +89,12 @@ h2{
 .formation{
     width: 100%;
 
-    justify-content: space-around;
+    justify-content:space-between;
     align-items: start;
 }
 
 .course{
-    width: 400px;
+    width: 300px;
 }
 
 /* off screen section */
@@ -124,16 +125,9 @@ h2{
     border-radius: 5px;
 }
 
-@media (max-width: 800px){
+@media (max-width: 1260px){
+
     .skills{
-        flex-direction: column;
-    }
-
-    #academic-background .container{
-        background: linear-gradient(to top, blue 50%, white 50%);
-    }
-
-    .formation{
         flex-direction: column;
     }
 
@@ -145,5 +139,19 @@ h2{
         flex-direction: column;
     }
 
+    .image{
+        width: 300px;
+    }
+}
+
+@media (max-width: 800px){
+
+    #academic-background .container{
+        background: linear-gradient(to top, blue 50%, white 50%);
+    }
+
+    .formation{
+        flex-direction: column;
+    }
 
 }
