@@ -200,6 +200,10 @@ footer .social img:hover{
 }
 
 @media (max-width: 500px){
+    .content{
+        width: 95dvw;
+    }
+
     h1{
         font-size: 2rem;
     }

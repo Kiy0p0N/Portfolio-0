@@ -154,10 +154,6 @@ h2{
 
 @media (max-width: 500px){
 
-    .content{
-        width: 95dvw;
-    }
-
     .card{
         width: 100%;
     }
