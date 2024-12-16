@@ -21,6 +21,11 @@ h2{
     font-size: 2.5rem;
 }
 
+h4{
+    color: black;
+    font-size: 1.2rem;
+}
+
 p{
     font-size: 1.1rem;
     font-weight: 500;
@@ -38,72 +43,14 @@ a{
     justify-content: center;
 }
 
-/* styling nav */
-header{
-    padding: 10px 0;
-    width: 100dvw;
-    height: 60px;
-    position: fixed;
-
-    z-index: 1000;
-
-    display: flex;
-    justify-content: center;
-}
-
-.navbar{
-    margin: auto 0;
-    width: 95dvw;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    padding: 0 20px;
-
-    z-index: 1000;
-}
-
-.logo{
-    flex: 5;
-    z-index: 1000;
-}
-
-.nav-links{
-    flex-direction: column;
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 100dvw;
+.container{
+    max-width: 100dvw;
+    width: 100%;
     height: 100dvh;
-    padding-top: 60px;
-    background-color: deepskyblue;
-    
-    transform: translateY(100%);
-    opacity: 0;
-    pointer-events: none;
-    transition: transform 1s ease, opacity 1s ease;
 }
 
-.nav-links.active{
-    transform: translateY(0);
-    opacity: 0.95;
-    pointer-events: auto;
-}
-
-.links{
-    flex: 9;
-
-    height: 100%;
-    flex-direction: column;
-}
-
-.links a{
-    font-size: 50px;
-    font-weight: bold;
-    transition: 0.5s;
-}
-
-.links a:hover{
-    color: white;
+.content{
+    width: 80dvw;
 }
 
 .social{
@@ -115,23 +62,92 @@ header{
     padding: 0 20px;
 }
 
+& .title{
+    text-align: center;
+}
+
 .social img{
     width: 30px;
     margin: 0 10px;
 }
 
-.hamburger{
-    display: flex;
+/* styling nav */
+header{
+    padding: 10px 0;
+    width: 100dvw;
+    height: 60px;
+    position: fixed;
     z-index: 1000;
-    cursor: pointer;
-}
+    display: flex;
+    justify-content: center;
 
-.rotate{
-    animation: rotate 1s ease-in-out;
-}
+    & .navbar{
+        margin: auto 0;
+        width: 95dvw;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
+        z-index: 1000;
 
-.reverse-rotate{
-    animation: reverseRotate 1s ease-in-out;
+        & .logo{
+            flex: 5;
+            z-index: 1000;
+        }
+
+        & .nav-links{
+            flex-direction: column;
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 100dvw;
+            height: 100dvh;
+            padding-top: 60px;
+            background-color: deepskyblue;
+            transform: translateY(100%);
+            opacity: 0;
+            pointer-events: none;
+            transition: transform 1s ease, opacity 1s ease;
+
+            & .links{
+                flex: 9;
+                height: 100%;
+                flex-direction: column;
+
+                & a{
+                    font-size: 50px;
+                    font-weight: bold;
+                    transition: 0.5s;
+                }
+
+                & a:hover{
+                    color: white;
+                }
+            }
+
+        
+        }
+
+        & .nav-links.active{
+            transform: translateY(0);
+            opacity: 0.95;
+            pointer-events: auto;
+        }
+
+        & .hamburger{
+            display: flex;
+            z-index: 1000;
+            cursor: pointer;
+        }
+
+        & .rotate{
+            animation: rotate 1s ease-in-out;
+        }
+        
+        & .reverse-rotate{
+            animation: reverseRotate 1s ease-in-out;
+        }
+    }
 }
 
 @keyframes rotate{
@@ -159,38 +175,38 @@ footer{
     height: 60px;
     padding: 0 10px;
     background-color: black;
-}
 
-.content-footer{
-    width: 95dvw;
-}
+    & .content-footer{
+        width: 95dvw;
+    }
 
-footer .social img{
-    opacity: 0.5;
-    transition: 0.5s;
-}
+    & .social img{
+        opacity: 0.5;
+        transition: 0.5s;
+    }
 
-footer .social img:hover{
-    opacity: 1;
-}
+    & .social img:hover{
+        opacity: 1;
+    }
 
-.button-arrow{
-    width: 30px;
-    height: 30px;
-    border-radius: 100%;
+    & .button-arrow{
+        width: 30px;
+        height: 30px;
+        border-radius: 100%;
+        transition: 0.5s;
+
+        & a{
+            width: 100%;
+            height: 100%;
+        
+            cursor: pointer;
+        }
+    }
+
+    & .button-arrow:hover{
+        background-color: blue;
+    }
     
-    transition: 0.5s;
-}
-
-.button-arrow a{
-    width: 100%;
-    height: 100%;
-
-    cursor: pointer;
-}
-
-.button-arrow:hover{
-    background-color: blue;
 }
 
 @media (max-width: 800px){
