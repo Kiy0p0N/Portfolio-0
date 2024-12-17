@@ -90,22 +90,133 @@
 #moments{
     & .container{
         & .content{
-            & .images{
-                width: 100%;
-                height: auto;
-                justify-content: space-around;
-                align-items: start;
+            & .title{
+                flex: 1;
+            }
 
-                & .image{
-                    & img{
+            & .description{
+                flex: 1;
+            }
+
+            & .my-carousel{
+                width: 100%;
+                height: 100%;
+
+                & .carousel{
+                    width: 80%;
+                    height: 60dvh;
+                    position: relative;
+                    box-sizing: border-box;
+
+                    & .carousel-indicators{
+                        width: 60%;
+                        height: 40px;
+                        position: absolute;
+                        bottom: 10px;
+                        gap: 10px;
+
+                        & .indicator{
+                            width: 35px;
+                            height: 5px;
+                            background-color: white;
+                            opacity: 0.2;
+                            border-radius: 2px;
+                            cursor: pointer;
+                            transition: ease-in-out 0.5s;
+                        }
+
+                        & .indicator.active{
+                            opacity: 0.8;
+                        }
+                    }
+
+                    & .carousel-inner{
                         width: 100%;
-                        border-radius: 5px;
+                        height: 100%;
+                        transition: transform 0.5s ease-in-out;
+
+                        & .image{
+                            width: 100%;
+                            height: 100%;
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            background-origin: border-box;
+                            background-attachment: initial;
+                            display: none;
+
+                            & .text{
+                                margin: auto;
+                                width: 70%;
+                                height: 80%;
+                                position: relative;
+                                color: white;
+
+                                & h2{
+                                    
+                                    position: absolute;
+                                    bottom: 0;
+                                }
+                            }
+                        }
+
+                        & .image.active{
+                            display: block;
+                        }
+
+                        & #img-1{
+                            background-image: url(../assets/image/photos/nature-trail.jpg);
+                            
+                            & .text{
+                                & h2{
+                                    left: 0;
+                                }
+                            }
+                        }
+
+                        & #img-2{
+                            background-image: url(../assets/image/photos/family.jpg);
+                        }
+
+                        & #img-3{
+                            background-image: url(../assets/image/photos/friends.jpg);
+
+                            & .text{
+                                & h2{
+                                    right: 0;;
+                                }
+                            }
+                        }
+                    }
+
+                    & .buttons{
+                        width: 15%;
+                        height: 100%;
+                        position: absolute;
+                        background: none;
+                        border: none;
+                        cursor: pointer;
+                        opacity: 0.5;
+                        transition: ease-in-out 0.5s;
+                    }
+
+                    & .buttons:hover{
+                        opacity: 1;
+                    }
+
+                    & .arrow-back{
+                        left: 0;
+                    }
+
+                    & .arrow-forward{
+                        right: 0;
                     }
                 }
             }
         }
     }
 }
+
 
 
 @media (max-width: 1260px){
@@ -128,12 +239,17 @@
         flex-direction: column;
     }
 
-    .images{
-        flex-direction: column;
-    }
-
-    .image{
-        width: 300px;
+    #moments{
+        & .container{
+            & .content{
+                & .my-carousel{
+                    & .carousel{
+                        width: 100%;
+                        height: 40dvh;
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -155,3 +271,5 @@
         width: 100%;
     }
 }
+
+
