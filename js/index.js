@@ -12,13 +12,4 @@ $(document).ready(function(){
         $('.contact .more-link').toggleClass('rectangle');
     });
 
-    
-    // alert
-    $('.blocked').click(()=>{
-        $('#customAlert').css('display', 'flex');
-    });
-
-    $('#closeAlert').click(()=>{
-        $('#customAlert').css('display', 'none');
-    });
 });   
