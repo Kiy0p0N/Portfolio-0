@@ -2,8 +2,8 @@
 
 #initial{
     & .container{
+        height: 100dvh;
         background-color: var(--dark-ocean);
-        color: white;
 
         & .content{
 
@@ -121,6 +121,7 @@
 /* About me */
 #about{
     & .container{
+        padding: 0;
 
         & .rectangle{
             width: 350px;
@@ -132,7 +133,7 @@
           .contact{
             flex: 5;
             width: 100%;
-            height: 100dvh;
+            height: 100%;
 
             & a{
                 color: white;
@@ -178,6 +179,7 @@
         & .container{
             text-align: center;
             height: 100dvh;
+
         }
     }
 
@@ -187,6 +189,7 @@
             height: auto;
 
             & .content{
+
                 & .projects{
                     & .project{
                         width: 80%;
@@ -234,14 +237,16 @@
     #initial{
         & .container{
             & .content{
-                display: block;
-        
+                flex-direction: column;
+                height: 60dvh;
+
                 & .apresentation h2, .introducion p{
                     text-align: center;
                     color: aliceblue;
                     padding: 0;
-                    margin: 10px 0;
+                    margin: auto;
                 }
+
             }
         }
     }
@@ -258,8 +263,15 @@
         }
     }
 
-    #about .container{
-        flex-direction: column;
+    #about{
+        & .container{
+            flex-direction: column;
+
+            & .about-me,
+              .contact{
+                height: 50dvh;
+            }
+        }
     }
 }
 
