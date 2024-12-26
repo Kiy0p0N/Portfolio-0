@@ -1,8 +1,8 @@
 /* styling main */
 
 #initial{
-    .container{
-        background-color: blue;
+    & .container{
+        background-color: var(--dark-ocean);
         color: white;
 
         & .content{
@@ -30,7 +30,7 @@
     & .container{
         height: auto;
         padding-bottom: 60px;
-        color: #000;
+        background-color: var(--deep-blue);
         flex-direction: column;
 
         & .content{
@@ -54,7 +54,8 @@
                 & hr{
                     width: 80%;
                     height: 3px;
-                    background-color: black;
+                    border: none;
+                    background-color: var(--moon-night);
                 }
     
                 & .project{
@@ -62,9 +63,14 @@
                     height: 33dvh;
                     padding: 20px;
                     border-radius: 5px;
-                    color: white;
-                    background-color: #333;
+                    color: black;
+                    background-color: var(--soft-gray);
                     display: flex;
+                    transition: 0.3s;
+
+                    &:hover{
+                        transform: translateY(-10px) scale(1.02);
+                    }
 
                     & .title{
                         flex: 2;
@@ -90,7 +96,8 @@
                             align-items: end;
     
                             & .button{
-                                background-color: dodgerblue;
+                                background-color: var(--moon-night);
+                                color: white;
                                 width: 100px;
                                 height: 30px;
                                 position: relative;
@@ -121,20 +128,30 @@
             border-radius: 0;
         }
 
-        & .about-me{
+        & .about-me,
+          .contact{
             flex: 5;
             width: 100%;
             height: 100%;
-            background-color: blue;
+
+            & a{
+                color: white;
+            }
+          }
+
+        & .about-me{
+            background-color: var(--dark-ocean);
+
+            & .more-link{
+                border-color: var(--deep-blue);
+            }
         }
 
         & .contact{
-            flex: 5;
-            width: 100%;
-            height: 100%;
+            background-color: var(--deep-blue);
 
             & .more-link{
-                border-color: blue;
+                border-color: var(--dark-ocean);
             }
         }
 
@@ -145,7 +162,7 @@
 .more-link{
     width: 350px;
     height: 350px;
-    border: 15px solid white;
+    border: 15px solid;
     border-radius: 100%;
     flex-direction: column;
     transition: 1s;

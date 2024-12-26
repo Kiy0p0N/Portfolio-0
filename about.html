@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Felipe - Sobre Mim</title>
 
+    <link rel="stylesheet" href="css/colors.css">
     <link rel="stylesheet" href="css/essentials.css">
     <link rel="stylesheet" href="css/about.css">
 </head>
@@ -19,7 +20,7 @@
                 <div class="links flex-center">
                     <a href="#initial">Quem Sou Eu?</a>
                     <a href="#skills">Habilidades</a>
-                    <a href="#academic-background">Formações</a>
+                    <a href="#courses">Formações</a>
                     <a href="#moments">Fora da Tela</a>
                 </div>
 
@@ -49,7 +50,7 @@
                         <img src="assets/image/photos/me.jpg" alt="Eu, Felipe, e meu companheiro, Hades.">
                     </div>
                     <div class="description flex-center">
-                        <p>Eu sou o <span style="color: blue; font-weight: 700;">Felipe</span>, um entusiasta da tecnologia e apaixonado por aprender. Sempre tive uma curiosidade enorme sobre como o mundo digital funciona, e foi isso que me levou a querer aprender a programar, o desejo de querer aprender mais é o que me move. Cada novo projeto é uma oportunidade de evoluir, e espero que você goste de conhecer um pouco mais sobre minha trajetória e interesses.</p>
+                        <p>Eu sou o <span style="color: var(--soft-gray); font-weight: 700;">Felipe</span>, um entusiasta da tecnologia e apaixonado por aprender. Sempre tive uma curiosidade enorme sobre como o mundo digital funciona, e foi isso que me levou a querer aprender a programar, o desejo de querer aprender mais é o que me move. Cada novo projeto é uma oportunidade de evoluir, e espero que você goste de conhecer um pouco mais sobre minha trajetória e interesses.</p>
                     </div>
                 </div>
             </div>
@@ -58,7 +59,7 @@
         <section id="skills">
             <div class="container flex-center">
                 <div class="content flex-center">
-                    <div class="title">
+                    <div class="title flex-center">
                         <h1>Minhas Habilidades</h1>
                     </div>
 
@@ -67,77 +68,68 @@
                     </div>
 
                     <div class="skills flex-center">
-                        <div class="card skills-card flex-center" id="programming-languages">
-                            <h4>Linguagens de Programação</h4>
-                            <div class="card-content">
-                                <p>Python</p>
-                                <p>JavaScript</p>
-                                <p>Node.js</p>
-                            </div>
+                        <div class="technology flex-center">
+                            <img src="assets/image/svg/technology/html-5-svgrepo-com.svg" id="html" alt="Logo HTML5" title="Meus Conhecimentos em HTML5">
+                            <img src="assets/image/svg/technology/css-3-svgrepo-com.svg" id="css" alt="Logo CSS3" title="Meus Conhecimentos em CSS3">
+                            <img src="assets/image/svg/technology/javascript-svgrepo-com.svg" id="js" alt="Logo JavaScript" title="Meus Conhecimentos em JavaScript">
+                            <img src="assets/image/svg/technology/node-js-svgrepo-com.svg" id="node" alt="Logo Node.js" title="Meus Conhecimentos em Node.js">
+                            <img src="assets/image/svg/technology/express-svgrepo-com.svg" id="express" alt="Logo Express" title="Meus Conhecimentos em Express">
+                            <img src="assets/image/svg/technology/npm-svgrepo-com.svg" id="npm" alt="Logo NPM" title="Meus Conhecimentos em NPM">
+                            <img src="assets/image/svg/technology/python-svgrepo-com.svg" id="python" alt="Logo Python" title="Meus Conhecimentos em Python">
+                            <img src="assets/image/svg/technology/mysql-svgrepo-com.svg" id="mysql" alt="Logo MySQL" title="Meus Conhecimentos em MySQL">
                         </div>
-                        
-                        <div class="card skills-card flex-center" id="web-development">
-                            <h4>Desenvolvimento Web</h4>
-                            <div class="card-content">
-                                <p>HTML</p>
-                                <p>CSS</p>
-                                <p>Bootstrap</p>
-                                <p>EJS</p>
-                            </div>
+                    
+                        <div class="skill-description">
+                            <h3 id="skill-title"></h3>
+                            <p id="skill-text"></p>
                         </div>
-                        
-                        <div class="card skills-card flex-center" id="tools">
-                            <h4>Ferramentas</h4>
-                            <div class="card-content">
-                                <p>Git</p>
-                                <p>VSCode</p>
-                                <p>Github</p>
-                                <p>npm</p>
-                                <p>Express</p>
-                            </div>
-                        </div>
-                        
-
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="academic-background">
-            <div class="container flex-center">
-                <div class="content flex-center">
-                    <div class="title">
-                        <h1>Minhas Formações</h1>
+        <section id="courses">
+            <div class="container">
+                <h2>Meus Cursos</h2>
+                <div class="cursos-container">
+                    <div class="curso">
+                    <h3>Cursos Concluídos</h3>
+                    <ul>
+                        <li>
+                        <strong>Instituto Proa</strong> - Desenvolvimento Pessoal
+                        <span>Plataforma Proa</span>
+                        </li>
+                        <li>
+                        <strong>DIO</strong> - Fundamentos de IA para Devs
+                        <span>Santander 2024</span>
+                        </li>
+                        <li>
+                        <strong>Santander Open Academy</strong> - Transformação Digital
+                        </li>
+                        <li>
+                        <strong>Cisco Networking Academy</strong> - Python Essencial 1
+                        </li>
+                    </ul>
                     </div>
-
-                    <div class="formation flex-center">
-                        <div class="card course flex-center">
-                            <h4>Concluídos</h4>
-                            <div class="card-content">
-                                <p><strong>Plataforma Proa</strong> - Instituto Proa, foco no desenvolvimento pessoal.</p>
-                                <br>
-                                <p><strong>Fundamentos de IA para Devs – Santander 2024</strong> - DIO, aprendizado sobre ferramentas de inteligência artificial.</p>
-                                <br>
-                                <p><strong>Transformação Digital</strong> – Santander Open Academy, entendimento dos impactos da transformação digital.</p>
-                                <br>
-                                <p><strong>Python Essencial 1</strong> – Cisco Networking Academy, conceitos básicos de Python.</p>
-                            </div>
-                        </div>
-
-                        <div class="card course flex-center">
-                            <h4>Cursando</h4>
-                            <div class="card-content">
-                                <p><strong>Análise e Desenvolvimento de Sistemas</strong> - Uninter, formação voltada para desenvolvimento de sistemas.</p>
-                                <br>
-                                <p><strong>The Complete 2024 Web Development Bootcamp</strong> - Udemy, foco em desenvolvimento web completo.</p>
-                                <br>
-                                <p><strong>100 Days of Code: The Complete Python Pro Bootcamp</strong> - Udemy, foco em desenvolvimento e práticas avançadas com Python.</p>
-                                <br>
-                                <p><strong>React - The Complete Guide 2024</strong> – Udemy, curso focado em React e frameworks modernos.</p>
-                                <br>
-                                <p><strong>Start Proa</strong> - Instituto Proa, estudo de conceitos e práticas em machine learning.</p>
-                            </div>
-                        </div>
+                    <div class="curso">
+                    <h3><i class="fas fa-book"></i> Cursos em Andamento</h3>
+                    <ul>
+                        <li>
+                        <strong>Uninter</strong> - Análise e Desenvolvimento de Sistemas
+                        </li>
+                        <li>
+                        <strong>Udemy</strong> - The Complete 2024 Web Development Bootcamp
+                        </li>
+                        <li>
+                        - 100 Days of Code: Python Pro Bootcamp
+                        </li>
+                        <li>
+                        - React - The Complete Guide 2024
+                        </li>
+                        <li>
+                        <strong>Instituto Proa</strong> - Start Proa (Machine Learning)
+                        </li>
+                    </ul>
                     </div>
                 </div>
             </div>

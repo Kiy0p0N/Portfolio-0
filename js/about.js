@@ -1,13 +1,37 @@
 $(document).ready(function(){
 
     // Skill section
-    $('.skills-card').click(function(){
-        // Closes any card that is already open
-        $('.skills-card').not(this).find('.card-content').slideUp();
+    const skillDescriptions = {
+        html: "Eu me considero em nível avançado em HTML5. Tenho um ótimo domínio dos principais elementos e atributos, incluindo a criação de formulários, uso semântico de elementos e recursos modernos. Esse conhecimento sólido me permite criar páginas web acessíveis, estruturadas e funcionais, mostrando que estou pronto para lidar com projetos desafiadores. 🚀",
 
-        // Toggles the content of the clicked card
-        $(this).find('.card-content').slideToggle();
-    });
+        css: "CSS3 possibilita a estilização avançada de páginas web, incluindo animações, layouts responsivos e design visual aprimorado.",
+
+        js: "JavaScript é uma linguagem de programação essencial para criar páginas web interativas e dinâmicas.",
+
+        node: "Node.js é um ambiente de execução para JavaScript que permite desenvolver aplicações do lado servidor.",
+
+        express: "Express.js é um framework minimalista para Node.js, usado para construir APIs e aplicações web de forma rápida e eficiente.",
+
+        npm: "NPM é o gerenciador de pacotes do Node.js, usado para instalar, atualizar e gerenciar dependências de projetos.",
+
+        python: "Python é uma linguagem de programação versátil, usada em desenvolvimento web, automação, ciência de dados e muito mais.",
+        
+        mysql: "MySQL é um sistema de gerenciamento de banco de dados relacional, amplamente utilizado em aplicações web."
+    };
+    
+    $(".technology img").hover(
+        function () {
+            const skillId = $(this).attr("id");
+            const skillDescription = skillDescriptions[skillId];
+            $("#skill-title").text($(this).attr("title"));
+            $("#skill-text").text(skillDescription);
+            $(".skill-description").fadeIn(0);
+        },
+        function () {
+            $(".skill-description").fadeOut(0);
+        }
+    );
+
 
     // Formations section
     $('.course').click(function(){
@@ -15,6 +39,9 @@ $(document).ready(function(){
 
         $(this).find('.card-content').slideToggle();
     });
+
+
+
 
     // Moments section
     // Variables

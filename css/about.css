@@ -1,6 +1,4 @@
 .content{
-    height: 90dvh;
-    gap: 40px;
     flex-direction: column;
 }
 
@@ -10,6 +8,7 @@
 
 #initial{
     & .container{
+        background-color: var(--dark-ocean);
 
         & .content{
 
@@ -20,31 +19,10 @@
                 & img{
                     width: 300px;
                     border-radius: 100%;
-                    box-shadow: 1rem 1rem 1rem black;
+                    box-shadow: 1rem 1rem 1rem var(--moon-night);
                 }
             }
         }
-    }
-}
-
-.card{
-    width: 350px;
-    margin: 10px auto;
-    padding: 15px;
-    background-color: lightblue;
-    border: 2px solid white;
-    border-radius: 15px;
-    flex-direction: column;
-    cursor: pointer;
-    transition: background 0.3s ease;
-
-    & .card-content{
-        display: none;
-        text-align: center;
-        font-size: 1em;
-        color: black;
-        margin-top: 10px;
-        transition: max-height 0.3s ease;
     }
 }
 
@@ -52,35 +30,136 @@
 #skills{
 
     & .container{ 
-        background-color: blue;
+        background-color: var(--deep-blue);
         color: white;
 
         & .content{
-            & .skills{
-                width: 100%;
-                gap: 10px;
-                justify-content: space-around;
-                align-items: start;
+            & .title{
+                flex: 1;
+            }
 
-                & .skill-card{
+            & .description{
+                flex: 1;
+            }
+
+            & .skills{
+                position: relative;
+                flex: 8;
+                width: 100%;
+                height: 100%;
+                flex-direction: column;
+
+                & .technology{
+                    position: absolute;
+                    top: 0;
+                    flex: 2;
+
+                    & img{
+                        width: 50px;
+                        margin: 10px;
+                        cursor: pointer;
+                        transition: transform 0.2s;
+                    }
+
+                    & img:hover{
+                        transform: scale(1.2);
+                    }
+                }
+
+                & .skill-description{
+                    height: auto;
+                    max-height: 300px;
+                    width: 80%;
+                    margin: 60px;
+                    padding: 30px;
                     text-align: center;
+                    color: black;
+                    background-color: var(--soft-gray);
+                    display: none;
                 }
             }
-        }
+            
+        }    
     }
 }
 
 /* academic background section */
-#academic-background{
+#courses{
     & .container{
-        background: linear-gradient(to right, white 50%, blue 50%);
+        width: 100%;
+        height: auto;
+        min-height: 100dvh;
 
-        & .content{
-            & .formation{
-                width: 100%;
-            
-                justify-content:space-between;
-                align-items: start;
+        background: linear-gradient(150deg, var(--dark-ocean), var(--deep-blue));
+        padding: 3rem;
+        color: #fff;
+
+        & h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        & .cursos-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+
+            & .curso {
+            flex: 1 1 calc(50% - 2rem);
+            background-color: var(--soft-gray);
+            color: #333;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+
+            &:hover {
+                transform: translateY(-10px);
+                box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+            }
+
+            & h3 {
+                font-size: 1.8rem;
+                color: var(--moon-night);
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+                margin-bottom: 1.5rem;
+                font-weight: bold;
+
+                & i {
+                color: #00d2ff;
+                font-size: 2rem;
+                }
+            }
+
+            & ul {
+                list-style: none;
+                padding: 0;
+
+                & li {
+                margin-bottom: 1rem;
+                font-size: 1.1rem;
+                line-height: 1.5;
+
+                & strong {
+                    display: block;
+                    font-size: 1.2rem;
+                    font-weight: bold;
+                    color: #222;
+                }
+
+                & span {
+                    display: block;
+                    font-size: 0.95rem;
+                    color: #666;
+                }
+                }
+            }
             }
         }
     }
@@ -89,6 +168,8 @@
 /* off screen section */
 #moments{
     & .container{
+        background-color: var(--deep-blue);
+
         & .content{
             & .title{
                 flex: 1;
@@ -221,18 +302,8 @@
 
 @media (max-width: 1260px){
 
-    .container{
-        min-height: 100dvh;
-        height: auto;
-        padding: 60px o;
-    }
-
     .content{
-        height: auto;
-    }
-
-    .skills{
-        flex-direction: column;
+        margin: auto;
     }
 
     .formation{
@@ -259,16 +330,44 @@
         width: 200px;
     }
 
+    #skills{
+        & .container{
+            & .content{
+
+                & .skills{
+                    & .technology{
+                        width: auto;
+
+                        & img{
+                            width: 30px;
+                        }
+                    }
+        
+                    & .skill-description{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
     #academic-background .container{
         background: linear-gradient(to top, blue 50%, white 50%);
     }
-
 }
 
 @media (max-width: 500px){
 
     .card{
         width: 100%;
+    }
+
+    #skills{
+        & .container{
+            & .content{
+                width: 95%;
+            }
+        }
     }
 }
 
