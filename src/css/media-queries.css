@@ -61,8 +61,40 @@
         width: 95%;
     }
 
+    .container{
+        padding: 120px 20px;
+    }
+
     .projects__container{
         width: 95%;
         padding: 60px 20px;
+    }
+
+    .footer__container{
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 400px){
+    header, footer{
+        padding: 20px;
+    }
+
+    .container{
+        padding: 120px 10px;
+    }
+
+    .skills__container ul{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .projects__container{
+        padding: 60px 10px;
+    }
+
+    .projects__container .card{
+        width: 250px;
+        height: 430px;
     }
 }
