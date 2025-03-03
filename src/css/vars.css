@@ -1,0 +1,11 @@
+:root{
+    --title-font: 'Mostserrat';
+    --body-font: 'Open Sans Regular';
+    --impact-font: 'Playfair Display';
+
+    --dark-blue: #0056B3;
+    --white: #ffffff;
+    --light-gray: #f5f5f5;
+    --light-black: #333333;
+    --dark-gray: #6C757D;
+}

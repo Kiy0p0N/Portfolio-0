@@ -3,161 +3,289 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Felipe - Home</title>
+    <title>Portfólio</title>
 
-    <link rel="stylesheet" href="css/colors.css">
-    <link rel="stylesheet" href="css/essentials.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/vars.css">
+    <link rel="stylesheet" href="src/css/header-footer.css">
+    <link rel="stylesheet" href="src/css/main.css">
+    <link rel="stylesheet" href="src/css/media-queries.css">
 </head>
 <body>
+    
+    <!--HEADER-->
     <header>
-        <nav class="navbar">
-            <div class="logo">
-                <a href="index.html">&lt;/&gt; Code by Felipe</a>
+        <div class="header__container">
+            <h1>
+                <a href="#">Felipe</a>
+            </h1>
+
+            <div class="menu-hamburger">
+                <img src="src/image/svg/hamburger.svg" alt="" id="hamburger">
             </div>
 
-            <div class="nav-links flex-center">
-                <div class="links flex-center">
-                    <a href="#initial">Home</a>
-                    <a href="#portfolio">Projetos</a>
-                    <a href="#about">Sobre Mim</a>
-                </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#about">Sobre Mim</a>
+                    </li>
 
-                <div class="social">
-                    <a href="https://www.instagram.com/felp.zip/" target="_blank"><img src="assets/image/svg/social/instagram.svg" alt="Link para o instagram"></a>
-                    <a href="https://www.linkedin.com/in/felipe-cesar-rodrigues/" target="_blank"><img src="assets/image/svg/social/linkedin.svg" alt="Link para o linkedin"></a>
-                    <a href="https://github.com/Kiy0p0N" target="_blank"><img src="assets/image/svg/social/github.svg" alt="Link para o github"></a>
-                </div>
-            </div>
+                    <li>
+                        <a href="#skills">Habilidades</a>
+                    </li>
 
-            <div class="hamburger reverse-rotate">
-                <img src="assets/image/svg/hamburger-svgrepo-com.svg" alt="Menu hamburguer">
-            </div>
-                
-            
-        </nav>
+                    <li>
+                        <a href="#portfolio">Portfólio</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
+    <!--MAIN-->
     <main>
-        <section id="initial">
-            <div class="container flex-center">
-                <div class="content flex-center">
-                    <div class="apresentation flex-center">
-                        <h2>Olá! Eu sou o Felipe, prazer em conhecê-lo. Por favor, dê uma olhada por aí!</h2>
+
+        <!--Hero section-->
+        <section id="hero">
+            <div class="hero__container container">
+                <h2>Evoluindo a cada linha de código</h2>
+                <p>Desenvolvedor fullstack em constante aprendizado, focado em construir aplicações funcionais, modernas e bem estruturadas. Busco aprimorar minhas habilidades criando soluções que unem performance e boas práticas.</p>
+                <a href="#portfolio" class="btn">Veja Meu Trabalho</a>
+            </div>
+        </section>
+
+        <!--About section-->
+        <section id="about">
+            <div class="about__container container">
+                <h2>Sobre Mim</h2>
+                
+                <p>
+                    Olá! Me chamo Felipe Cesar Rodrigues, sou um desenvolvedor fullstack em constante aprendizado, apaixonado por tecnologia e resolução de problemas. Atualmente, curso Análise e Desenvolvimento de Sistemas e estou sempre buscando aprimorar minhas habilidades, tanto no desenvolvimento frontend quanto backend.
+                </p>
+                <p>
+                    Tenho interesse em criar aplicações bem estruturadas, focadas em performance, boas práticas e usabilidade. Além disso, estou explorando machine learning para entender como a inteligência artificial pode potencializar soluções digitais.
+                </p>
+                <p>
+                    Atualmente, estou trabalhando em projetos pessoais e aprimorando meu portfólio para consolidar minha jornada como desenvolvedor. Se você quiser trocar ideias ou colaborar em algum projeto, estou sempre aberto a novas oportunidades!
+                </p>
+                
+                <a href="src/docs/curriculo.pdf" download="Curriculo-Felipe.pdf" class="btn">Baixar Currículo</a>
+
+            </div>
+        </section>
+
+        <!--Skills section-->
+        <section id="skills">
+            <div class="skills__container container">
+                <ul>
+                    <li>
+                        <img src="src/image/svg/technology/html-5-svgrepo-com.svg" alt="">
+
+                        <div id="html" class="learning-percentage">
+                            <h3>92%</h3>
+                        </div>
+                    </li>
+
+                    <li>
+                        <img src="src/image/svg/technology/css-3-svgrepo-com.svg" alt="">
+
+                        <div id="css" class="learning-percentage">
+                            <h3>78%</h3>
+                        </div>
+                    </li>
+
+                    <li>
+                        <img src="src/image/svg/technology/javascript-svgrepo-com.svg" alt="">
+
+                        <div id="js" class="learning-percentage">
+                            <h3>75%</h3>
+                        </div>
+                    </li>
+
+                    <li>
+                        <img src="src/image/svg/technology/python-svgrepo-com.svg" alt="">
+
+                        <div id="python" class="learning-percentage">
+                            <h3>81%</h3>
+                        </div>
+                    </li>
+
+                    <li>
+                        <img src="src/image/svg/technology/node-js-svgrepo-com.svg" alt="">
+
+                        <div id="node" class="learning-percentage">
+                            <h3>71%</h3>
+                        </div>
+                    </li>
+
+                    <li>
+                        <img src="src/image/svg/technology/express-svgrepo-com.svg" alt="">
+
+                        <div id="express" class="learning-percentage">
+                            <h3>70%</h3>
+                        </div>
+                    </li>
+
+                    <li>
+                        <img src="src/image/svg/technology/pgsql-svgrepo-com.svg" alt="">
+
+                        <div id="pgsql" class="learning-percentage">
+                            <h3>62%</h3>
+                        </div>
+                    </li>
+
+                    <li>
+                        <img src="src/image/svg/technology/git-svgrepo-com.svg" alt="">
+
+                        <div id="git" class="learning-percentage">
+                            <h3>81%</h3>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!--Portfolio section-->
+        <section id="portfolio">
+            <div class="portfolio__container container">
+                <h2>Meus Projetos</h2>
+
+                <div class="projects__container">
+                    <div class="card">
+                        <img src="src/image/projects/web-blog.png" alt="Imagem do Projeto">
+                        <div class="card-content">
+                            <h3 class="card-title">Web Blog</h3>
+                            <p class="card-description">O backend fornece uma API para criação, edição, exclusão e listagem de posts, enquanto o frontend permite a interação com esses dados.</p>
+                            <a href="https://github.com/Kiy0p0N/web-blog" class="btn" target="_blank">Ver mais</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="src/image/projects/tensura.png" alt="Imagem do Projeto">
+                        <div class="card-content">
+                            <h3 class="card-title">Octagrama - Tensura</h3>
+                            <p class="card-description">Página web sobre os Lordes Demônios de Tensura, usa HTML, CSS, Node.js (Express), EJS, Axios e Body-parser.</p>
+                            <a href="https://github.com/Kiy0p0N/demon-lord-from-tensura" class="btn" target="_blank">Ver mais</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="src/image/projects/capital-quiz.png" alt="Imagem do Projeto">
+                        <div class="card-content">
+                            <h3 class="card-title">Capitais Mundiais</h3>
+                            <p class="card-description">Este é um jogo interativo para testar seus conhecimentos sobre capitais de países, desenvolvido com Node.js, Express e PostgreSQL.</p>
+                            <a href="https://github.com/Kiy0p0N/world-capital-quiz" class="btn" target="_blank">Ver mais</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="src/image/projects/poke-api.png" alt="Imagem do Projeto">
+                        <div class="card-content">
+                            <h3 class="card-title">Pokémon API App</h3>
+                            <p class="card-description">Este projeto é um aplicativo web que permite buscar informações sobre Pokémon utilizando a PokeAPI.</p>
+                            <a href="https://github.com/Kiy0p0N/poke-api" class="btn" target="_blank">Ver mais</a>
+                        </div>
                     </div>
                     
-                    <div class="introducion">
-                        <p>Sou apaixonado por aprender e construir soluções de software que possam melhorar a vida das pessoas ao meu redor. Estou em constante desenvolvimento, adquirindo habilidades para criar software que atenda às necessidades de indivíduos, pequenas empresas e, no futuro, grandes corporações. O que você faria se tivesse um futuro desenvolvedor de software motivado e dedicado ao seu alcance?</p>
+                    <div class="card">
+                        <img src="src/image/projects/spotify.png" alt="Imagem do Projeto">
+                        <div class="card-content">
+                            <h3 class="card-title">Página do Spotify</h3>
+                            <p class="card-description">Projeto criado utilizando HTML, CSS, JavaScript e jQuery. Ele imita a página inicial do Spotify.</p>
+                            <a href="https://github.com/Kiy0p0N/spotify-clone" class="btn" target="_blank">Ver mais</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="src/image/projects/calculator.png" alt="Imagem do Projeto">
+                        <div class="card-content">
+                            <h3 class="card-title">Calculadora</h3>
+                            <p class="card-description">Uma calculadora simples desenvolvida com HTML, CSS, JavaScript e jQuery.</p>
+                            <a href="https://github.com/Kiy0p0N/calculator" class="btn" target="_blank">Ver mais</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="src/image/projects/brazil-quiz.png" alt="Imagem do Projeto">
+                        <div class="card-content">
+                            <h3 class="card-title">Quiz - Capitais do Brasil</h3>
+                            <p class="card-description">Este projeto é um jogo educativo desenvolvido em Python com as biblioteca turtle e pandas.</p>
+                            <a href="https://github.com/Kiy0p0N/100-days-of-python/tree/main/days/day%2025" class="btn" target="_blank">Ver mais</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="src/image/projects/pong-game.png" alt="Imagem do Projeto">
+                        <div class="card-content">
+                            <h3 class="card-title">Pong Game</h3>
+                            <p class="card-description">Este projeto é uma recriação do clássico jogo Pong, desenvolvido em Python utilizando o módulo turtle.</p>
+                            <a href="https://github.com/Kiy0p0N/100-days-of-python/tree/main/days/day%2022" class="btn" target="_blank">Ver mais</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="src/image/projects/snake-game.png" alt="Imagem do Projeto">
+                        <div class="card-content">
+                            <h3 class="card-title">Jogo da Cobrinha</h3>
+                            <p class="card-description">Desenvolvido em Python utilizando a biblioteca turtle. O jogo desafia o jogador a controlar a cobra para coletar alimentos e crescer.</p>
+                            <a href="https://github.com/Kiy0p0N/100-days-of-python/tree/main/days/day%2021" class="btn" target="_blank">Ver mais</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="src/image/projects/password-manager.png" alt="Imagem do Projeto">
+                        <div class="card-content">
+                            <h3 class="card-title">Gerenciador de Senhas</h3>
+                            <p class="card-description">Criado com Python e Tkinter. Ele permite salvar credenciais de login, gerar senhas seguras e pesquisar informações armazenadas.</p>
+                            <a href="https://github.com/Kiy0p0N/100-days-of-python/tree/main/days/day%2030" class="btn" target="_blank">Ver mais</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="portfolio">
-            <div class="container flex-center">
-                <div class="content flex-center">
-
-                    <div class="title flex-center">
-                        <h1>Projetos</h1>
-                    </div>
-
-                    <div class="projects flex-center">
-                        <hr>
-                        <div class="project flex-center">
-                            <div class="title">
-                                <h2>01. Web Blog</h2>
-                            </div>
-
-                            <div class="content-project flex-center">
-                                
-                                <img src="assets/image/photos/web-blog (1).png" alt="">
-                                <div class="description">
-                                    <p>Este é um projeto simples de blog desenvolvido com Node.js, Express, EJS, method-override, body-parser e uuid. Os usuários podem criar, visualizar, editar e excluir postagens.</p>
-                                </div>
-                                <div class="buttons">
-                                    <a href="https://github.com/Kiy0p0N/web-blog" target="_blank"><div class="button">GITHUB</div></a>
-                                </div>
-                            </div>
-                            
-                        </div>
-                        <hr>
-                        <div class="project flex-center">
-                            <div class="title">
-                                <h2>02. QR Code</h2>
-                            </div>
-
-                            <div class="content-project flex-center">
-                                
-                                <img src="assets/image/photos/qr-code.png" alt="">
-                                <div class="description">
-                                    <p>Um gerador de QR Code simples construído com Node.js e EJS. Este projeto permite que os usuários insiram uma URL e gerem um QR Code correspondente, que pode ser visualizado na página da web.</p>
-                                </div>
-                                <div class="buttons">
-                                    <a href="https://github.com/Kiy0p0N/qrcode-with-node" target="_blank"><div class="button">GITHUB</div></a>
-                                </div>
-                            </div>
-                        </div>
-                        <hr>
-                        <div class="project">
-                            <div class="title">
-                                <h2>03. Projetos Python</h2>
-                            </div>
-
-                            <div class="content-project flex-center">
-                                
-                                <img src="assets/image/photos/python-terminal.png" alt="">
-                                <div class="description">
-                                    <p>Repositório para acompanhar meu aprendizado na linguagem de programação Python. O objetivo é, durante 100 dias, criar 100 projetos.</p>
-                                </div>
-                                <div class="buttons">
-                                    <a href="https://github.com/Kiy0p0N/100-days-of-python" target="_blank"><div class="button">GITHUB</div></a>
-                                </div>
-                            </div>
-                        </div>
-                        <hr>
-                    </div>
-                </div>
-                
-            </div>
-        </section>
-
-        <section id="about">
-            <div class="container flex-center">
-                <div class="about-me flex-center">
-                    <a href="about.html" class="more-link flex-center">
-                        <h3>Continuar explorando?</h3>
-                        <h2>Sobre Mim</h2>
-                    </a>
-                </div>
-
-                <div class="contact flex-center">
-                    <a href="https://wa.me/5535910144269?text=Olá,%20podemos%20conversar?" class="more-link flex-center" target="_blank">
-                        <h3>Interessado?</h3>
-                        <h2>Me Contate</h2>
-                    </a>
-                </div>
-            </div>
-        </section>
     </main>
 
-    <footer class="flex-center">
-        <div class="content-footer flex-center">
-            <div class="social">
-                <a href="https://www.instagram.com/felp.zip/" target="_blank"><img src="assets/image/svg/social/instagram.svg" alt="Link para o instagram"></a>
-                <a href="https://www.linkedin.com/in/felipe-cesar-rodrigues/" target="_blank"><img src="assets/image/svg/social/linkedin.svg" alt="Link para o linkedin"></a>
-                <a href="https://github.com/Kiy0p0N" target="_blank"><img src="assets/image/svg/social/github.svg" alt="Link para o github"></a>
-            </div>
+    <!--Footer-->
+    <footer>
+        <div class="footer__container">
+            <p>&copy; 2025 Felipe. Todos os direitos reservados.</p>
+            <ul>
+                <li>
+                    <a href="https://www.linkedin.com/in/felipe-cesar-rodrigues/" target="_blank">
+                        <img src="src/image/svg/social/linkedin.svg" alt="">    
+                        LinkedIn
+                    </a>
+                </li>
 
-            <div class="button-arrow">
-                <a href="#initial" class="flex-center">
-                    <img src="assets/image/svg/arrow/arrow_up.svg" alt="Link para o início da página">
-                </a>
-            </div>
+                <li>
+                    <a href="https://github.com/Kiy0p0N" target="_blank">
+                        <img src="src/image/svg/social/github.svg" alt="">
+                        GitHub
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.instagram.com/felp.zip/" target="_blank">
+                        <img src="src/image/svg/social/instagram.svg" alt="">
+                        Instagram
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://wa.me/5535910144269" target="_blank">
+                        <img src="src/image/svg/social/whatsapp.svg" alt="">
+                        Whatsapp
+                    </a>
+                </li>
+            </ul>
         </div>
     </footer>
 
+    <!--Script-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="js/essentials.js"></script>
-    <script src="js/index.js"></script>
+    <script src="src/js/script.js"></script>
+
+
 </body>
 </html>

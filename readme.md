@@ -1,37 +1,34 @@
-# Meu Portfólio
+# Portfólio de Felipe
 
-Este repositório contém o código-fonte do meu portfólio pessoal, onde apresento alguns dos meus projetos e informações sobre minha experiência.
+Este é o portfólio pessoal de Felipe Cesar Rodrigues, um desenvolvedor fullstack em constante aprendizado. A página inclui informações sobre mim, minhas habilidades, projetos desenvolvidos, e formas de contato.
 
-## Objetivo
+## Descrição do Projeto
 
-O objetivo deste portfólio é apresentar meus projetos e habilidades de maneira clara e acessível, funcionando como um espaço centralizado para possíveis empregadores e colaboradores conhecerem meu trabalho.
-
-## Estrutura da Página
-
-A página principal (`index.html`) está organizada em três seções:
-
-- **Início**: Uma breve descrição sobre quem sou e o que faço.
-- **Projetos**: Exibe uma seleção dos meus principais projetos.
-- **Sobre Mim**: Inclui um link para uma página dedicada com mais detalhes sobre minha trajetória e um link para meu WhatsApp para contato direto.
-
-A página sobre mim (`about.html`) está organizada em três seções:
-
-- **Quem sou eu**: Uma breve descrição sobre quem sou e o que faço.
-- **Habilidades**: Exibe as principais ferramentas que utilizo atualmente.
-- **Formações**: Exibe as principais formações concluídas e as que ainda estou cursando.
-- **Fora das telas**: Mostra um pouco do que gosto de fazer quando não estou no computador.
+O portfólio é uma página web desenvolvida para apresentar as habilidades e projetos de Felipe. Ele inclui seções com informações sobre o desenvolvedor, suas habilidades técnicas, um portfólio de projetos desenvolvidos, e links para redes sociais e contato.
 
 ## Tecnologias Utilizadas
 
-- **HTML**
-- **CSS**
-- **JavaScript**
-- **jQuery**
+- **HTML**: Estruturação do conteúdo da página.
+- **CSS**: Estilização da página (com arquivos adicionais para reset, variáveis, e media queries).
+- **JavaScript**: Interatividade, incluindo navegação dinâmica no menu e exibição de conteúdo.
+- **jQuery**: Manipulação de DOM e interações dinâmicas.
+- **SVG**: Utilização de ícones em formato SVG para representar tecnologias e redes sociais.
 
-## Visualização
+## Funcionalidades
 
-O portfólio está disponível neste [link](https://felipe-cesar-rodrigues.com.br/). Acesse para ver meus projetos e saber mais sobre mim.
+- Seção **Sobre Mim**: Apresentação de Felipe e suas áreas de interesse.
+- Seção **Habilidades**: Exibe o nível de conhecimento em diversas tecnologias (HTML, CSS, JavaScript, Python, Node.js, Express, PostgreSQL, Git).
+- Seção **Portfólio**: Lista de projetos desenvolvidos, com links para os repositórios no GitHub.
+- Seção **Footer**: Links para redes sociais e WhatsApp.
+- Responsividade: A página é otimizada para diferentes tamanhos de tela, utilizando media queries para ajustar o layout.
 
----
+## Licença
 
-**Obrigado por visitar meu portfólio!**
+Este projeto está licenciado sob a Licença MIT - consulte o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+## Contato
+
+- [LinkedIn](https://www.linkedin.com/in/felipe-cesar-rodrigues/)
+- [GitHub](https://github.com/Kiy0p0N)
+- [Instagram](https://www.instagram.com/felp.zip/)
+- [WhatsApp](https://wa.me/5535910144269)
